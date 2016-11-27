@@ -1,5 +1,6 @@
 
 # setup scrapy in Win10 Python 3.5
+###### all of packages are ziped in 'Win10X64  Python3.5 packages.rar',download and enjoy!
 1.upgrade PIP    
   
     download new version of PIP sourcefiles.Or download in this project folder.Unzip it
