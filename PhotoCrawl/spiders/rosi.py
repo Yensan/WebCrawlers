@@ -1,14 +1,25 @@
+# -*- coding: utf-8 -*-
 import scrapy
-from scrapy.loader import ItemLoader 
-from Crawl.crawl3.items import ImageItem
-import http.client
+from scrapy.loader import ItemLoader
 
-class RosiSpider(scrapy.Spider):
-    name = "rosi"
+class ImageItem(scrapy.Item):
+    '''
+    Define here the models for your scraped items.
+    define the fields for your item here like:
+    name = scrapy.Field()
+    See documentation in:
+    http://doc.scrapy.org/en/latest/topics/items.html
+    '''
+    image_urls = scrapy.Field()
+    image_paths = scrapy.Field()
+    images = scrapy.Field()
+
+class PhotoSpider(scrapy.Spider):
+    name = "PhotoSpider"
     allowed_domains = ['rosiok.com']
-    start_urls = ['http://www.rosiok.com/x/',
+    start_urls = ['http://www.rosiok.com/',
 
-    ]#'http://www.rosiok.com/',
+                  ]
 
     def start_requests(self):
         for u in self.start_urls:
