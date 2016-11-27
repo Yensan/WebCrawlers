@@ -9,10 +9,10 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'crawl3'
+BOT_NAME = 'spiders'
 
-SPIDER_MODULES = ['crawl3.spiders']
-NEWSPIDER_MODULE = 'crawl3.spiders'
+SPIDER_MODULES = ['spiders']
+NEWSPIDER_MODULE = 'spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -67,10 +67,10 @@ ROBOTSTXT_OBEY = True
 ITEM_PIPELINES = {
     #'crawl3.pipelines.SomePipeline': 300,
     #'scrapy.pipelines.images.ImagesPipeline': 1,
-    'crawl3.pipelines.MyImagesPipeline': 1,
+    'spiders.pipelines.MyImagesPipeline': 1,
 }
 
-IMAGES_STORE = '../data/rosi/'
+IMAGES_STORE = '../../data/rosi/'
 IMAGES_URLS_FIELD = 'image_urls'
 IMAGES_RESULT_FIELD = 'images'
 
