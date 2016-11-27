@@ -70,7 +70,7 @@ ITEM_PIPELINES = {
     'spiders.pipelines.MyImagesPipeline': 1,
 }
 
-IMAGES_STORE = '../../data/rosi/'
+IMAGES_STORE = '../../data/nanrencd//'
 IMAGES_URLS_FIELD = 'image_urls'
 IMAGES_RESULT_FIELD = 'images'
 

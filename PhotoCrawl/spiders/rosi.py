@@ -16,8 +16,8 @@ class ImageItem(scrapy.Item):
 
 class PhotoSpider(scrapy.Spider):
     name = "PhotoSpider"
-    allowed_domains = ['rosiok.com']
-    start_urls = ['http://www.rosiok.com/',
+    allowed_domains = ['nanrencd.com']
+    start_urls = ['http://www.nanrencd.com/',
 
                   ]
 
