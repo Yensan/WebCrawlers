@@ -44,10 +44,15 @@ then, run setup.Py
    //TODO
 
 # 更改目标网站，配置说明: 
-### 存储路径配置   
+### 存储路径配置
+更改存储路径，避免多个网站的数据混杂
     settings.py，更改IMAGES_STORE = '../../data/rosi/'，改成'../../data/XXX/'
 ### 网址配置
 rosi.py ，更改目标网站   
 
      #allowed_domains = ['rosiok.com']       
      #start_urls = ['http://www.rosiok.com/',]
+pipelines.py ，更改图片匹配URL   
+
+     #            if 'rosiok.com' not in image_url:
+                        continue
